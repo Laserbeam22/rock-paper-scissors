@@ -4,6 +4,6 @@ function computerPlay() {
     return choice;
 }
 
-function playRound() {
+function playRound(playerSelection, computerSelection) {
 
 }
