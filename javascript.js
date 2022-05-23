@@ -3,6 +3,7 @@ function computerPlay() {
     let choice = choices[Math.floor(Math.random()* choices.length)];
     return choice;
 }
+const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
     let cS = computerSelection;
