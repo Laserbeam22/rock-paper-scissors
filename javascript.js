@@ -1,11 +1,13 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
+const computerSelection = computerPlay(); 
+const playerSelection = choices.find(element => {
+    return element.toLowerCase() === choice.toLowerCase();
+});
 
 function computerPlay() {
     let choice = choices[Math.floor(Math.random()* choices.length)];
     return choice;
 }
-
-const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
     let cS = computerSelection;
@@ -21,7 +23,3 @@ function playRound(playerSelection, computerSelection) {
         alert('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
 }
-
-const playerSelection = choices.find(element => {
-    return element.toLowerCase() === choice.toLowerCase();
-  });
