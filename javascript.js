@@ -21,3 +21,7 @@ function playRound(playerSelection, computerSelection) {
         alert('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
 }
+
+const playerSelection = choices.find(element => {
+    return element.toLowerCase() === choice.toLowerCase();
+  });
