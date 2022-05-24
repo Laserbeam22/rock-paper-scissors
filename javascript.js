@@ -1,8 +1,10 @@
+const choices = ['Rock', 'Paper', 'Scissors'];
+
 function computerPlay() {
-    let choices = ['Rock', 'Paper', 'Scissors'];
     let choice = choices[Math.floor(Math.random()* choices.length)];
     return choice;
 }
+
 const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
