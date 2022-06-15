@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection) {
     let cS = computerSelection;
     let pS = playerSelection;
 
-    if (cS === 'Rock' && pS === 'Rock' || cS === 'Paper' && pS === 'Paper' || cS === 'Scissors' && pS === 'Scissors') {
+    if (cS === pS) {
         alert('It\'s a tie!');
     } else if (cS === 'Rock' && pS === 'Paper' || cS === 'Paper' && pS === 'Scissors' || cS === 'Scissors' && pS === 'Rock') {
         alert(`You win! ${pS} beats ${cS}!`);
