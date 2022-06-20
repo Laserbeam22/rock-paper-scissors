@@ -3,6 +3,7 @@ const computerSelection = computerPlay();
 const playerSelection = choices.find(element => {
     return element.toLowerCase() === choice.toLowerCase();
 });
+let scores = {playerScore : 0, computerScore : 0};
 
 function computerPlay() {
     let choice = choices[Math.floor(Math.random()* choices.length)];
