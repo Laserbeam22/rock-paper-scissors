@@ -35,3 +35,13 @@ function game(playRound) {
     }
     alert(scores);
 }
+
+function endGame(scores) {
+    if (scores.playerScore > scores.computerScore) {
+        alert('Victory is yours!');
+    } else if (scores.playerScore < scores.computerScore) {
+        alert('Luh-hoo-zuh-her! Better luck next time.');
+    } else {
+        alert('A complete tie. How unsatisfying.');
+    }
+}
