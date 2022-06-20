@@ -16,10 +16,14 @@ function playRound(playerSelection, computerSelection) {
 
     if (cS === pS) {
         alert('It\'s a tie!');
+        scores.playerScore++;
+        scores.computerScore++;
     } else if (cS === 'Rock' && pS === 'Paper' || cS === 'Paper' && pS === 'Scissors' || cS === 'Scissors' && pS === 'Rock') {
         alert(`You win! ${pS} beats ${cS}!`);
+        scores.playerScore++;
     } else if (cS === 'Rock' && pS === 'Scissors' || cS === 'Paper' && pS === 'Rock' || cS === 'Scissors' && pS === 'Paper') {
         alert(`You lose! ${cS} beats ${pS}!`);
+        scores.computerScore++;
     } else {
         alert('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
