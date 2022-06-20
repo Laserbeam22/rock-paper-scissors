@@ -28,3 +28,10 @@ function playRound(playerSelection, computerSelection) {
         alert('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
 }
+
+function game(playRound) {
+    for (let i = 0; i < 5; i++) {
+        console.log(playRound(playerSelection, computerPlay()));
+    }
+    alert(scores);
+}
