@@ -36,7 +36,7 @@ function game(playRound) {
         playRound(playerSelection, computerPlay());
         alert(scores);
     }
-    
+    endGame(scores);
 }
 
 function endGame(scores) {
