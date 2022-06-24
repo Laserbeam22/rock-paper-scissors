@@ -48,3 +48,5 @@ function endGame(scores) {
         alert('A complete tie. How unsatisfying.');
     }
 }
+
+game(playRound);
