@@ -33,9 +33,10 @@ function game(playRound) {
         const playerSelection = choices.find(element => {
             return element.toLowerCase() === choice.toLowerCase();
         });
+        playRound(playerSelection, computerPlay());
+        alert(scores);
     }
-    playRound(playerSelection, computerPlay());
-    alert(scores);
+    
 }
 
 function endGame(scores) {
