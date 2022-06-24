@@ -1,8 +1,6 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 const computerSelection = computerPlay(); 
-const playerSelection = choices.find(element => {
-    return element.toLowerCase() === choice.toLowerCase();
-});
+
 let scores = {playerScore : 0, computerScore : 0};
 
 function computerPlay() {
@@ -31,6 +29,9 @@ function playRound(playerSelection, computerSelection) {
 
 function game(playRound) {
     for (let i = 0; i < 5; i++) {
+        const playerSelection = choices.find(element => {
+            return element.toLowerCase() === choice.toLowerCase();
+        });
         console.log(playRound(playerSelection, computerPlay()));
     }
     alert(scores);
