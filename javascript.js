@@ -33,8 +33,8 @@ function game(playRound) {
         const playerSelection = choices.find(element => {
             return element.toLowerCase() === choice.toLowerCase();
         });
-        console.log(playRound(playerSelection, computerPlay()));
     }
+    playRound(playerSelection, computerPlay());
     alert(scores);
 }
 
