@@ -13,3 +13,15 @@
     
 </body>
 </html> 
+
+<script>
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            playerSelection = event.target.textContent;
+            console.log(playerSelection);
+        });
+    });
+
+</script>
