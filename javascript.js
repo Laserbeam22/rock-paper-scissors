@@ -42,7 +42,7 @@ function endGame(scores) {
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
         playerSelection = event.target.textContent;
         console.log(playerSelection);
     });
