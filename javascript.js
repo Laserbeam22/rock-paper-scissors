@@ -1,5 +1,6 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 const computerSelection = computerPlay(); 
+let playerSelection;
 
 let scores = {playerScore : 0, computerScore : 0};
 
@@ -36,4 +37,14 @@ function endGame(scores) {
         alert('A complete tie. How unsatisfying.');
     }
 }
+
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        playerSelection = event.target.textContent;
+        console.log(playerSelection);
+    });
+});
 
