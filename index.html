@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page Title</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     
@@ -12,16 +12,4 @@
     <button id="scissors">Scissors</button>
     
 </body>
-</html> 
-
-<script>
-    const buttons = document.querySelectorAll('button');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            playerSelection = event.target.textContent;
-            console.log(playerSelection);
-        });
-    });
-
-</script>
+</html>
