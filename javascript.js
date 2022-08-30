@@ -1,6 +1,5 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 const computerSelection = computerPlay(); 
-let playerSelection;
 
 let scores = {playerScore : 0, computerScore : 0};
 
@@ -44,7 +43,7 @@ const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', (event) => {
         playerSelection = event.target.textContent;
-        console.log(playerSelection);
+        playRound(playerSelection, computerPlay());
     });
 });
 
