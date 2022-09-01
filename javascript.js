@@ -1,6 +1,6 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 const computerSelection = computerPlay(); 
-
+let counter = 0;
 let scores = {playerScore : 0, computerScore : 0};
 
 function computerPlay() {
@@ -37,13 +37,24 @@ function endGame(scores) {
     }
 }
 
+function clickLoop() {
+    if(counter < 5) {
+        const buttons = document.querySelectorAll('button');
 
-const buttons = document.querySelectorAll('button');
+        buttons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+                playerSelection = event.target.textContent;
+                playRound(playerSelection, computerPlay());
+                if(counter == 4){
+                    endGame(scores);
+                } else {
+                    counter++;
+                }
+            });
+        });
+    } else {
+        alert('Error!');
+    }
+}
 
-buttons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-        playerSelection = event.target.textContent;
-        playRound(playerSelection, computerPlay());
-    });
-});
-
+console.log(clickLoop());
