@@ -13,27 +13,27 @@ function playRound(playerSelection, computerSelection) {
     let pS = playerSelection;
 
     if (cS === pS) {
-        alert('It\'s a tie!');
+        content.textContent = ('It\'s a tie!');
         scores.playerScore++;
         scores.computerScore++;
     } else if (cS === 'Rock' && pS === 'Paper' || cS === 'Paper' && pS === 'Scissors' || cS === 'Scissors' && pS === 'Rock') {
-        alert(`You win! ${pS} beats ${cS}!`);
+        content.textContent = (`You win! ${pS} beats ${cS}!`);
         scores.playerScore++;
     } else if (cS === 'Rock' && pS === 'Scissors' || cS === 'Paper' && pS === 'Rock' || cS === 'Scissors' && pS === 'Paper') {
-        alert(`You lose! ${cS} beats ${pS}!`);
+        content.textContent = (`You lose! ${cS} beats ${pS}!`);
         scores.computerScore++;
     } else {
-        alert('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
+        content.textContent = ('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
 }
 
 function endGame(scores) {
     if (scores.playerScore > scores.computerScore) {
-        alert('Victory is yours!');
+        content.textContent = ('Victory is yours!');
     } else if (scores.playerScore < scores.computerScore) {
-        alert('Luh-hoo-zuh-her! Better luck next time.');
+        content.textContent = ('Luh-hoo-zuh-her! Better luck next time.');
     } else {
-        alert('A complete tie. How unsatisfying.');
+        content.textContent = ('A complete tie. How unsatisfying.');
     }
 }
 
@@ -53,7 +53,7 @@ function clickLoop() {
             });
         });
     } else {
-        alert('Error!');
+        content.textContent = ('Error!');
     }
 }
 
