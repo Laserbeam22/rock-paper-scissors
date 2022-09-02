@@ -57,4 +57,12 @@ function clickLoop() {
     }
 }
 
-console.log(clickLoop());
+const results = document.querySelector('#results');
+const content = document.createElement('div');
+
+content.classList.add('content');
+
+results.textContent = clickLoop();
+content.textContent = "Rock, Paper, or Scissors??";
+
+results.appendChild(content);
