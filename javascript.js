@@ -16,12 +16,15 @@ function playRound(playerSelection, computerSelection) {
         content.textContent = ('It\'s a tie!');
         scores.playerScore++;
         scores.computerScore++;
+        score.textContent = (`Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`);
     } else if (cS === 'Rock' && pS === 'Paper' || cS === 'Paper' && pS === 'Scissors' || cS === 'Scissors' && pS === 'Rock') {
         content.textContent = (`You win! ${pS} beats ${cS}!`);
         scores.playerScore++;
+        score.textContent = (`Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`);
     } else if (cS === 'Rock' && pS === 'Scissors' || cS === 'Paper' && pS === 'Rock' || cS === 'Scissors' && pS === 'Paper') {
         content.textContent = (`You lose! ${cS} beats ${pS}!`);
         scores.computerScore++;
+        score.textContent = (`Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`);
     } else {
         content.textContent = ('Error. Please choose from one of the following options: "Rock", "Paper", or "Scissors"')
     }
@@ -47,6 +50,7 @@ function clickLoop() {
                 playRound(playerSelection, computerPlay());
                 if(counter == 4){
                     endGame(scores);
+                    score.textContent = (`Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`);
                 } else {
                     counter++;
                 }
@@ -59,10 +63,15 @@ function clickLoop() {
 
 const results = document.querySelector('#results');
 const content = document.createElement('div');
+const score = document.createElement('div');
 
 content.classList.add('content');
+score.classList.add('score');
 
 results.textContent = clickLoop();
 content.textContent = "Rock, Paper, or Scissors??";
+score.textContent = `Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`;
 
 results.appendChild(content);
+results.appendChild(score);
+results.insertBefore(content, score);
