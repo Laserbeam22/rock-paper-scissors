@@ -51,6 +51,9 @@ function clickLoop() {
                 if(counter == 4){
                     endGame(scores);
                     score.textContent = (`Your score: ${scores.playerScore}, Computer\'s score: ${scores.computerScore}`);
+                    for (var i = 0; i < buttons.length; i++){
+                        buttons[i].disabled = true;
+                    }
                 } else {
                     counter++;
                 }
