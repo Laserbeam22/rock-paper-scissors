@@ -32,11 +32,11 @@ function playRound(playerSelection, computerSelection) {
 
 function endGame(scores) {
     if (scores.playerScore > scores.computerScore) {
-        content.textContent = ('Victory is yours!');
+        content.textContent = ('END OF GAME: Victory is yours!');
     } else if (scores.playerScore < scores.computerScore) {
-        content.textContent = ('Luh-hoo-zuh-her! Better luck next time.');
+        content.textContent = ('END OF GAME: Luh-hoo-zuh-her! Better luck next time.');
     } else {
-        content.textContent = ('A complete tie. How unsatisfying.');
+        content.textContent = ('END OF GAME: A complete tie. How unsatisfying.');
     }
 }
 
