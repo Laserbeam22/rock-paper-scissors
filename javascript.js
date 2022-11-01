@@ -73,11 +73,12 @@ function clickLoop() {
         content.textContent = ('Error!');
     }
 }
-
+//Reference to "results" div
 const results = document.querySelector('#results');
+//Creates "content" & "score" divs 
 const content = document.createElement('div');
 const score = document.createElement('div');
-
+//Classes added to divs (FOR STYLING)
 content.classList.add('content');
 score.classList.add('score');
 
