@@ -51,12 +51,24 @@ function endGame(scores) {
 
 function clickLoop() {
     if (counter < 5) {
-        const buttons = document.querySelectorAll('button');
+        const buttons = document.querySelectorAll('.choice');
+        const allBtns = document.querySelectorAll('button');
+        const reset = document.querySelector('.reset');
 
-        buttons.forEach((button) => {
+        allBtns.forEach((button) => {
             button.addEventListener('click', (event) => {
-                playerSelection = event.target.textContent;
-                playRound(playerSelection, computerPlay());
+                if (event.target == reset) {
+                    allBtns.forEach((button) => { button.disabled = false;})
+                    counter = 0;
+                    scores.playerScore = 0;
+                    scores.computerScore = 0;
+                    score.textContent = `Your score: ${scores.playerScore},
+  Computer\'s score: ${scores.computerScore}`;
+                    content.textContent = "Rock, Paper, or Scissors??";
+                } else {
+                    playerSelection = event.target.textContent;
+                    playRound(playerSelection, computerPlay());
+                }
                 if (counter == 4) {
                     endGame(scores);
                     score.textContent = (`Your score: ${scores.playerScore},
@@ -64,8 +76,10 @@ function clickLoop() {
                     for (var i = 0; i < buttons.length; i++) {
                         buttons[i].disabled = true;
                     }
-                } else {
+                } else if (event.target != reset) {
                     counter++;
+                } else {
+                    return;
                 }
             });
         });
