@@ -1,11 +1,12 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
-const computerSelection = computerPlay();
+let computerSelection = '';
+let playerSelection = '';
 let counter = 0;
 let scores = {playerScore : 0, computerScore : 0};
 
 function computerPlay() {
     let choice = choices[Math.floor(Math.random()* choices.length)];
-    return choice;
+    return computerSelection = choice;
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -62,6 +63,8 @@ function clickLoop() {
                     counter = 0;
                     scores.playerScore = 0;
                     scores.computerScore = 0;
+                    playerSelection = '';
+                    computerSelection = '';
                     score.textContent = `Your score: ${scores.playerScore},
   Computer\'s score: ${scores.computerScore}`;
                     content.textContent = "Rock, Paper, or Scissors??";
