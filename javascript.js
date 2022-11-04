@@ -45,7 +45,7 @@ function endGame(scores) {
           ('END OF GAME: Luh-hoo-zuh-her! Better luck next time. Refresh browser to play again.');
     } else {
         content.textContent = 
-          ('END OF GAME: A complete tie. How unsatisfying. Refresh browser to play again.');
+          ('END OF GAME: A complete tie. How unsatisfying. Click "Reset" to play again.');
     }
 }
 
