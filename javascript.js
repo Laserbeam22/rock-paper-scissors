@@ -61,7 +61,7 @@ function clickLoop() {
                     computerSelection = '';
                     score.textContent = `Your score: ${scores.playerScore},
   Computer\'s score: ${scores.computerScore}`;
-                    content.textContent = "Rock, Paper, or Scissors??";
+                    content.textContent = "Rock, Paper, or Scissors?";
                 } else {
                     playerSelection = event.target.textContent;
                     playRound(playerSelection, computerPlay());
@@ -94,7 +94,7 @@ content.classList.add('content');
 score.classList.add('score');
 
 results.textContent = clickLoop();
-content.textContent = "Rock, Paper, or Scissors??";
+content.textContent = "Rock, Paper, or Scissors? Best out of 5, ties don't count!";
 score.textContent = `Your score: ${scores.playerScore},
   Computer\'s score: ${scores.computerScore}`;
 
