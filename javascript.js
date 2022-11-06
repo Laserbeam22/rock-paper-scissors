@@ -37,14 +37,11 @@ function playRound(playerSelection, computerSelection) {
 function endGame(scores) {
     if (scores.playerScore > scores.computerScore) {
         content.textContent = 
-          ('END OF GAME: Victory is yours! Refresh browser to play again.');
-    } else if (scores.playerScore < scores.computerScore) {
+          ('END OF GAME: Victory is yours! Click "Reset" to play again.');
+    } else { 
         content.textContent = 
-          ('END OF GAME: Luh-hoo-zuh-her! Better luck next time. Refresh browser to play again.');
-    } else {
-        content.textContent = 
-          ('END OF GAME: A complete tie. How unsatisfying. Click "Reset" to play again.');
-    }
+          ('END OF GAME: Luh-hoo-zuh-her! Better luck next time. Click "Reset" to play again.');
+    } 
 }
 
 function clickLoop() {
