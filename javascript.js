@@ -1,7 +1,6 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 let computerSelection = '';
 let playerSelection = '';
-let counter = 0;
 let scores = {playerScore : 0, computerScore : 0};
 
 function computerPlay() {
@@ -15,8 +14,6 @@ function playRound(playerSelection, computerSelection) {
 
     if (cS === pS) {
         content.textContent = ('It\'s a tie!');
-        scores.playerScore++;
-        scores.computerScore++;
         score.textContent = (`Your score: ${scores.playerScore},
           Computer\'s score: ${scores.computerScore}`);
     } else if (cS === 'Rock' && pS === 'Paper' || cS === 'Paper' &&
@@ -51,7 +48,7 @@ function endGame(scores) {
 }
 
 function clickLoop() {
-    if (counter < 5) {
+    if (scores.playerScore + scores.computerScore < 5) {
         const buttons = document.querySelectorAll('.choice');
         const allBtns = document.querySelectorAll('button');
         const reset = document.querySelector('.reset');
@@ -72,7 +69,7 @@ function clickLoop() {
                     playerSelection = event.target.textContent;
                     playRound(playerSelection, computerPlay());
                 }
-                if (counter == 4) {
+                if (scores.playerScore + scores.computerScore == 5) {
                     endGame(scores);
                     score.textContent = (`Your score: ${scores.playerScore},
                       Computer\'s score: ${scores.computerScore}`);
