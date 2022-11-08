@@ -14,3 +14,8 @@ body {
    background: no-repeat center 10% url(../../img/concertBackground.jpg), black;
    background-size: cover;
 }
+
+button {
+    width: clamp(30px, 20%, 5rem);
+    font-size: calc(var(--width) - 4px);
+}
