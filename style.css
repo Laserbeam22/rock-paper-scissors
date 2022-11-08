@@ -3,3 +3,8 @@
     font-weight: normal; 
     font-style: normal;
 }
+
+body{
+   background: no-repeat center 10% url(../../img/concertBackground.jpg);
+   background-size: cover;
+}
