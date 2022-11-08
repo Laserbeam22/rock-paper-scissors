@@ -11,6 +11,6 @@
 }
 
 body {
-   background: no-repeat center 10% url(../../img/concertBackground.jpg);
+   background: no-repeat center 10% url(../../img/concertBackground.jpg), black;
    background-size: cover;
 }
