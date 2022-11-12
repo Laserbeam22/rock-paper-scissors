@@ -19,6 +19,16 @@ body {
 }
 
 button {
-    width: clamp(30px, 20%, 5rem);
-    font-size: calc(var(--width) - 4px);
+    /* margin: 8vh .2vw; */
+    align-items: center;
+    width: clamp(var(--font-size), 30%, 23vw);
+    font-size: calc(var(--width) + var(--padding) - 2rem);
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: .25rem .75rem;
+    border: currentColor 0.125rem solid;
+    border-radius: .25rem;
+    text-shadow: 0 0 0.15rem hsl(0 0% 100% / 0.3), 0 0 0.45rem currentColor;
+    box-shadow: inset 0 0 .6rem 0 currentColor, 0 0 1rem 0 currentColor;
 }
