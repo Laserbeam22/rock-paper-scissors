@@ -18,6 +18,16 @@ body {
    align-items: center;
 }
 
+.container {
+    margin: 5vh;
+}
+
+#results {
+    margin: 0px auto 20vh auto;
+    font-size: calc(var(--width - 2px));
+    width: 50vh;
+}   
+
 button {
     /* margin: 8vh .2vw; */
     align-items: center;
