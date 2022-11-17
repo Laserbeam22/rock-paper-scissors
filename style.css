@@ -47,4 +47,5 @@ button:disabled {
     background-color: rgb(213, 210, 210);
     color: rgb(197, 197, 198);
     cursor: not-allowed;
+    box-shadow: none;
 }
