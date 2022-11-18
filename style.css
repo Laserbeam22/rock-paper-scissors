@@ -26,6 +26,7 @@ body {
     margin: 0px auto 20vh auto;
     font-size: calc(var(--width - 2px));
     width: 50vh;
+    background-color: rgba(175, 175, 175, 0.5);
 }   
 
 button {
