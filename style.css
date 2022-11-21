@@ -53,6 +53,7 @@ button:disabled {
 .content {
     border: 2px solid black;
     text-align: center;
+    font-size: 2vw;
     padding: 3vh;
 }
   
