@@ -29,7 +29,6 @@ body {
 }   
 
 button {
-    /* margin: 8vh .2vw; */
     align-items: center;
     width: clamp(var(--font-size), 30%, 23vw);
     font-size: calc(var(--width) + var(--padding) - 2rem);
