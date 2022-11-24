@@ -19,11 +19,11 @@ body {
 }
 
 .container {
-    margin: 5vh;
+    margin: 3vh auto 2vh auto;
 }
 
 #results {
-    margin: 0px auto 5vh auto;
+    margin: 0px auto 2vh auto;
     width: clamp(50vh, 45vw, 800px);
     background-color: rgba(175, 175, 175, 0.5);
 }   
