@@ -57,11 +57,11 @@ button:disabled {
 .content {
     border: 2px solid black;
     text-align: center;
-    padding: 3vh;
+    padding: 2vh;
 }
   
 .score1, .score2 {
     border: 2px solid black;
-    padding: 2.5vh;
+    padding: 1.5vh;
     text-align: center;
 }
