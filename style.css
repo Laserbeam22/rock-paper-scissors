@@ -31,6 +31,7 @@ body {
 }   
 
 button {
+    margin: .15rem;
     align-items: center;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     cursor: pointer;
