@@ -32,7 +32,6 @@ body {
 
 button {
     align-items: center;
-    width: clamp(var(--font-size), 30%, 23vw);
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     cursor: pointer;
     background-color: black;
