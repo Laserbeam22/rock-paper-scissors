@@ -33,7 +33,7 @@ body {
 button {
     align-items: center;
     width: clamp(var(--font-size), 30%, 23vw);
-    font-size: calc(var(--width) + var(--padding) - 2rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     cursor: pointer;
     background-color: black;
     color: rgb(255, 255, 255);
