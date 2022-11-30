@@ -24,7 +24,7 @@ body {
 
 #results {
     margin: 0px auto 2vh auto;
-    width: clamp(50vh, 45vw, 800px);
+    width: clamp(10vh, 45vw, 75rem);
     background-color: rgba(175, 175, 175, 0.5);
     padding: 1rem;
 }   
