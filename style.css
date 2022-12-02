@@ -65,4 +65,5 @@ button:disabled {
     border: 2px solid black;
     padding: 1.5vh;
     text-align: center;
+    font-size: .8em;
 }
