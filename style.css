@@ -66,4 +66,5 @@ button:disabled {
     padding: 1.5vh;
     text-align: center;
     font-size: .8em;
+    margin-top: -.3rem;
 }
