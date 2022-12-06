@@ -19,11 +19,11 @@ body {
 }
 
 .container {
-    margin: 3vh auto 2vh auto;
+    margin: 1.3rem auto 1rem auto;
 }
 
 #results {
-    margin: 0px auto 2vh auto;
+    margin: 0px auto 1rem auto;
     width: clamp(10vh, 45vw, 75rem);
     font-size: clamp(1.5rem, 3vw, 3rem);
     background-color: rgba(175, 175, 175, 0.5);
