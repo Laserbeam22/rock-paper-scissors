@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection) {
     let pS = playerSelection;
 
     if (cS === pS) {
-        content.textContent = ('It\'s a tie!');
+        content.textContent = (`Computer chose ${cS} as well. It\'s a tie!`);
         score1.textContent = `Your score: ${scores.playerScore}`;
         score2.textContent = `Computer\'s score: ${scores.computerScore}`;
         
