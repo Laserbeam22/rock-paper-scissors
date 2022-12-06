@@ -56,13 +56,13 @@ button:disabled {
 }
 
 .content {
-    border: 2px solid black;
+    border: .3rem solid black;
     text-align: center;
     padding: 1em;
 }
   
 .score1, .score2 {
-    border: 2px solid black;
+    border: .3rem solid black;
     padding: 1.5vh;
     text-align: center;
     font-size: .8em;
